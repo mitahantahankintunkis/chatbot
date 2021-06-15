@@ -1,0 +1,112 @@
+:root {
+    --col-bg-0: #121e27;
+    --col-bg-1: #1f232c;
+    --col-fg: #282d38;
+    --col-bot-msg: #3c8065;
+    --col-user-msg: #2a313d;
+    --col-msg-text: #eeeeee;
+    --col-input: #363b45;
+    --col-submit: #ffffff;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--col-bg-1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#chat {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.msg {
+    border-radius: 8px;
+    padding: 0.5em;
+    max-width: max(40vw, 15em);
+    color: var(--col-msg-text);
+}
+
+.botmsg {
+    background-color: var(--col-bot-msg);
+}
+
+.usermsg {
+    background-color: var(--col-user-msg);
+}
+
+.usermsgcont {
+    align-self: flex-end;
+}
+
+.arrow {
+    content: "";
+	width: 0;
+	height: 0;
+    position: relative;
+    top: -40px;
+    z-index: -1;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+}
+
+.arrow-left {
+    left: -16px;
+    background-color: var(--col-bg1);
+	border-bottom: 40px solid var(--col-bot-msg);
+}
+
+.arrow-right {
+    left: calc(100% - 64px);
+    background-color: var(--col-bg1);
+	border-bottom: 40px solid var(--col-user-msg);
+}
+
+#chatcontrols {
+    display: flex;
+    background-color: var(--col-fg);
+    height: 4em;
+    padding: 0.5em;
+}
+
+#chatinput {
+    flex: 1 1;
+    background-color: var(--col-input);
+    color: var(--col-msg-text);
+    min-width: 1em;
+    border: none;
+    height: 100%;
+    border-radius: 4px;
+}
+
+#chatsubmit {
+    background-color: var(--col-fg);
+    color: var(--col-submit);
+    border: none;
+    padding: 1em;
+    height: 100%;
+    width: 6em;
+    justify-content: center;
+    line-height: 1em;
+}
+
+#chatsubmit:hover {
+    border: 1px solid var(--col-submit);
+    border-radius: 4px;
+}
