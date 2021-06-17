@@ -92,6 +92,7 @@ body {
     min-width: 1em;
     border: none;
     height: 100%;
+    padding: 1em;
     border-radius: 4px;
 }
 

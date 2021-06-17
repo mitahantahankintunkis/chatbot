@@ -72,3 +72,14 @@ submitButton.addEventListener('click', (event) => {
 });
 
 addBotMessage(chatbot.reset());
+
+
+function resize() {
+    // Fix window height for mobile
+    let height = window.innerHeight;
+    const body = document.querySelector('body');
+    body.style.setProperty('height', `${height}px`);
+}
+
+window.addEventListener('resize', resize);
+resize();
