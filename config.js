@@ -3,8 +3,8 @@
 // Separated into different objects for easier translation
 const strings = {
     // Root
-    rootMsg: 'Hei, olen RNA™ liittymäavustaja. Voit kysellä minulta sekä puhelin- että talojen liittymistä, mutta koita pitää kysymyksesi yksinkertaisina, sillä olen vielä työn alla :)',
-    rootErr: 'Sori, mutta en ymmärtänyt mitä tarkoitit. Voit Voit kysellä minulta sekä puhelin- että talojen liittymistä, mutta koita pitää kysymyksesi yksinkertaisina, sillä olen vielä työn alla :)',
+    rootMsg: 'Hei, olen RNA™ liittymäavustaja. Voit kysellä minulta sekä puhelinliittymistä että talojen liittymistä, mutta koita pitää kysymyksesi yksinkertaisina, sillä olen vielä työn alla :)',
+    rootErr: 'Sori, mutta en ymmärtänyt mitä tarkoitit. Voit Voit kysellä minulta sekä puhelinliittymistä että talojen liittymistä, mutta koita pitää kysymyksesi yksinkertaisina, sillä olen vielä työn alla :)',
 
     // 1st children
     phoneMsg: 'RNA™:llä on tarjolla useita eri liittymiä, joista voitte valita teille parhaiten sopivan. Kiinnostaako teitä LTE- tai prepaidliittymä, vai haluatteko ennemmin miniliittymän vain puheluita varten?',
